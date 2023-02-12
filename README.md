@@ -445,7 +445,7 @@ $ vue inspect > output.js
 
 3. 使用方式：
     - 默认插槽：
-      ```js
+      ```html
       父组件中：
         <Category>
           <div>html 结构</div>
@@ -461,7 +461,7 @@ $ vue inspect > output.js
       ```
     
     - 具名插槽：
-      ```js
+      ```html
       父组件中：
         <Category>
           <template slot="center">
@@ -486,7 +486,7 @@ $ vue inspect > output.js
       - 理解：<span style="color: red">数据在组件的自身，但根据数据生成的结构需要使用者来决定</span>。例如：`games` 数据在 `Category` 组件中，但是用数据所遍历出来的结构由 `App` 组件决定。
 
       - 具体编码：
-        ```js
+        ```html
         父组件中：
           <Category>
             <template scope="scopeData">
